@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Load More Button</title>
+<style>
+    /* Style for the button */
+    .load-more-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div id="content">
+    <!-- Initially visible content -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dolor vel urna rutrum faucibus. Nam eget nunc euismod, hendrerit purus non, malesuada ligula. Nulla facilisi.</p>
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eu lacus eget ligula interdum sodales.</p>
+</div>
+
+<button class="load-more-btn" id="load-more">Load More</button>
+
+<script>
+    // Function to load more content when button is clicked
+    document.getElementById("load-more").addEventListener("click", function() {
+        // Example: Append more content
+        document.getElementById("content").innerHTML += "<p>Additional content loaded...</p>";
+    });
+</script>
+
+</body>
+</html>
